@@ -4,35 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".Mainactivity">
 
-        <LinearLayout
+    <!--hedder-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            tools:ignore="MissingConstraints">
-
-            <androidx.cardview.widget.CardView
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
                 android:layout_height="wrap_content">
-                <LinearLayout
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:gravity="center_horizontal"
-                    android:layout_height="wrap_content">
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@drawable/bghomescreen"
+                    android:textSize="@dimen/_24ssp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:text="Proffssional Resume        Maker" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rectangle"
-                        android:textSize="@dimen/_20ssp"
-                        android:text="Tap To Creat new resume" />
 
-                </LinearLayout>
+            </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <!--    footer-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgADD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:src="@drawable/button" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:background="@drawable/rectangle"
+                    android:text="  Tap To Creat new Resume  "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 
 
 </LinearLayout>
